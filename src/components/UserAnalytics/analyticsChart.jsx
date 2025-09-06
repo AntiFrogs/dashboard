@@ -2,9 +2,9 @@ import "./analyticsChart.css"
 import { ResponsiveContainer , LineChart , Line , XAxis , YAxis , Legend , Tooltip , CartesianGrid} from "recharts";
 
 
-export default function AnalyticsChart({ title , AnalyticsData , chartType = "linear" , dataKey , }) {
+export default function AnalyticsChart({ title , AnalyticsData , chartType = "linear" , dataKey  }) {
     return (
-        <div className="analytics-cxhart-bo" >
+        <div className="analytics-chart-box" >
             <p>{title}</p>
             <div className="chart-container">
                 <ResponsiveContainer width="100%" height="100%" >
