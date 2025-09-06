@@ -1,7 +1,6 @@
-.user-analytics-box {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 2rem;
+.analytics-pie-chart-box {
+    width: 40%;
+    margin: 2rem auto;
     padding: 0.5rem 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
     border-radius: 10px;
@@ -9,14 +8,15 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+
 }
 
-.user-analytics-box > p:first-child {
+.analytics-pie-chart-box > p:first-child {
     font-size: 1.15rem;
     font-weight: 700;
     margin-bottom: 2rem;
 }
 
-.chart-container {
+.pie-chart-container {
     height: 300px;
 }

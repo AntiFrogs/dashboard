@@ -21,8 +21,8 @@ export default function SideBar() {
         <div className="sidebar">
             <SidebarCat cat="Dashboard" buttons={
                 [
-                    {id:1 , svg: <LuBrickWall className="sidebar-submenu-btn-svg" /> , name: "Home" ,goToPath: "/"},
-                    {id:2 , svg: <IoAnalyticsOutline className="sidebar-submenu-btn-svg" /> , name: "Analytics"},
+                    {id:1 , svg: <LuBrickWall className="sidebar-submenu-btn-svg" /> , name: "Home" , goToPath: "/"},
+                    {id:2 , svg: <IoAnalyticsOutline className="sidebar-submenu-btn-svg" /> , name: "Analytics" , goToPath: "/analytics"},
                     {id:3 , svg: <FaMoneyCheckAlt className="sidebar-submenu-btn-svg" /> , name: "Sales"},
                 ]
             } />
