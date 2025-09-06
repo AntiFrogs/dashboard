@@ -1,6 +1,6 @@
 import "./home.css"
 import StatCard from "../StatCard/statCard.jsx";
-import AnalyticsChart from "../UserAnalytics/analyticsChart.jsx";
+import AnalyticsChart from "../AnalyticsChart/analyticsChart.jsx";
 import UserListItem from "../UserListItem/userListItem.jsx";
 import TransactionListItem from "../TransactionListItem/transactionListItem.jsx";
 

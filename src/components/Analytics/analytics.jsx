@@ -1,5 +1,5 @@
 import "./analytics.css"
-import AnalyticsChart from "../UserAnalytics/analyticsChart.jsx";
+import AnalyticsChart from "../AnalyticsChart/analyticsChart.jsx";
 import AnalyticsPieChart from "../AnalyticsPieChart/analyticsPieChart.jsx";
 
 export default function Analytics({userAnalyticsData , salesAnalyticsData , transactionStatusAnalyticsData}) {
