@@ -1,5 +1,6 @@
 import "./home.css"
 import StatCard from "../StatCard/statCard.jsx";
+import UserAnalytics from "../UserAnalytics/userAnalytics.jsx";
 
 export default function Home() {
     return (
@@ -9,6 +10,7 @@ export default function Home() {
                 <StatCard title="Sales" stats={{money: "4,415" , percent: -1.4}} compareTo={"last month"} />
                 <StatCard title="Cost" stats={{money: "2,225" , percent: 3.7}} compareTo={"last month"} />
             </div>
+            <UserAnalytics />   
         </div>
     );
 }

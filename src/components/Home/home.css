@@ -1,5 +1,4 @@
 .home {
-    flex:  1;
     height: 100%;
 }
 .home-main-stats {
@@ -9,5 +8,4 @@
     flex-wrap: wrap;
     gap: 1.5rem;
     width: 100%;
-    height: 10rem;
 }

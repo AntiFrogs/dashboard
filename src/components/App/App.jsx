@@ -9,7 +9,9 @@ export default function App() {
         <Header />
         <main className='main'>
           <SideBar />
-          <Home />
+          <div className="main-content">
+            <Home />
+          </div>
         </main>
     </div>
   );
