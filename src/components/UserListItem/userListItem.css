@@ -66,3 +66,11 @@
     -o-transform: scale(1.05);
     background-color: #647FBC;
 }
+
+.is-displayed {
+    background-color: rgba(220, 20, 60 , 0.2);
+}
+
+.is-displayed:hover {
+    background-color: #DC143C;
+}

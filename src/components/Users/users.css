@@ -1,0 +1,107 @@
+.users-info-container {
+    width: 100%;
+    display: flex;
+    margin: 2rem 1rem;
+    justify-content: center;
+    align-items: flex-start;  
+    gap: 1.5rem;  
+    position: relative;
+}
+
+.users-list-container , .selected-user-info-container   {
+    width: 45%;
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.users-list-container > p:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    width: 40%;
+    border-bottom: 2px solid #000 ;
+}
+
+.users-list-container > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.selected-user-info-container {
+    position: sticky;
+    top: 0;
+}
+
+
+.selected-user-image-container {
+        width: 7rem;
+        height: 7rem;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+
+.selected-user-image-container > img {
+    width: 100%;
+    height: 100%;   
+}
+
+.selected-user-info {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.selected-user-info > p:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.selected-user-info > p:nth-child(2) {
+    font-size: 1.1rem;
+    color: #7A7A73;
+    margin-bottom: 1rem;
+}
+
+.selected-user-info > p:nth-child(3) {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.selected-user-transactions-list {
+    border-top: 2px solid #000;
+    padding: 1rem 0.5rem;
+}
+
+.selected-user-transactions-list > p:first-child {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.selected-user-transaction-table {
+    width: 100%;
+}
+
+.selected-user-transaction-table th {
+    text-align: left;
+}
+
+.selected-user-transaction-table td {
+    padding-top: 1rem ;
+}

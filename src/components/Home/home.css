@@ -48,8 +48,8 @@
 .transactions-table th {
     text-align: left;
 }
-.transactions-table tr {
-    margin: 0.5rem 0;
+.transactions-table td {
+    padding-top: 1rem;
 }
 
 
