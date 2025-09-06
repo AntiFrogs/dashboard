@@ -23,30 +23,30 @@ export default function SideBar() {
                 [
                     {id:1 , svg: <LuBrickWall className="sidebar-submenu-btn-svg" /> , name: "Home" , goToPath: "/"},
                     {id:2 , svg: <IoAnalyticsOutline className="sidebar-submenu-btn-svg" /> , name: "Analytics" , goToPath: "/analytics"},
-                    {id:3 , svg: <FaMoneyCheckAlt className="sidebar-submenu-btn-svg" /> , name: "Sales"},
+                    {id:3 , svg: <FaMoneyCheckAlt className="sidebar-submenu-btn-svg" /> , name: "Sales" , goToPath: "sales"},
                 ]
             } />
             <SidebarCat cat="Quick menu" buttons={
                 [
-                    {id:1 , svg: <FaUsers className="sidebar-submenu-btn-svg" /> , name: "Users"},
-                    {id:2 , svg: <FaRegUser className="sidebar-submenu-btn-svg" /> , name: "New User"},
-                    {id:3 , svg: <MdProductionQuantityLimits className="sidebar-submenu-btn-svg" /> , name: "Products"},
-                    {id:4 , svg: <MdOutlineAttachMoney className="sidebar-submenu-btn-svg" /> , name: "Transactions"},
-                    {id:5 , svg: <FaChartSimple className="sidebar-submenu-btn-svg" /> , name: "Reports"},
+                    {id:1 , svg: <FaUsers className="sidebar-submenu-btn-svg" /> , name: "Users" , goToPath: "/users"},
+                    {id:2 , svg: <FaRegUser className="sidebar-submenu-btn-svg" /> , name: "New User" , goToPath: "/new_user"},
+                    {id:3 , svg: <MdProductionQuantityLimits className="sidebar-submenu-btn-svg" /> , name: "Products" , goToPath: "/products"},
+                    {id:4 , svg: <MdOutlineAttachMoney className="sidebar-submenu-btn-svg" /> , name: "Transactions" , goToPath: "/transactions"},
+                    {id:5 , svg: <FaChartSimple className="sidebar-submenu-btn-svg" /> , name: "Reports" , goToPath: "/reports"},
                 ]
             } />
             <SidebarCat cat="Notifications" buttons={
                 [
-                    { id:1 , svg: <IoMdMail className="sidebar-submenu-btn-svg" /> , name: "Mail"},
-                    { id:2 , svg: <MdOutlineDynamicFeed className="sidebar-submenu-btn-svg" /> , name: "Feedback"},
-                    { id:3 , svg: <TiMessages className="sidebar-submenu-btn-svg" /> , name: "Messages"},
+                    { id:1 , svg: <IoMdMail className="sidebar-submenu-btn-svg" /> , name: "Mail" , goToPath: "/mail"},
+                    { id:2 , svg: <MdOutlineDynamicFeed className="sidebar-submenu-btn-svg" /> , name: "Feedback" , goToPath: "/feedback"},
+                    { id:3 , svg: <TiMessages className="sidebar-submenu-btn-svg" /> , name: "Messages" , goToPath: "/messages"},
                 ]
             } />
             <SidebarCat cat="Staff" buttons={
                 [
-                    { id:1 , svg: <FaBriefcase className="sidebar-submenu-btn-svg" /> , name: "Manage"},
-                    { id:2 , svg: <IoAnalyticsOutline className="sidebar-submenu-btn-svg" /> , name: "Analytics"},
-                    { id:3 , svg: <MdError className="sidebar-submenu-btn-svg" /> , name: "Reports"},
+                    { id:1 , svg: <FaBriefcase className="sidebar-submenu-btn-svg" /> , name: "Manage" , goToPath: "/manage" },
+                    { id:2 , svg: <IoAnalyticsOutline className="sidebar-submenu-btn-svg" /> , name: "Analytics" , goToPath: "/analytics" },
+                    { id:3 , svg: <MdError className="sidebar-submenu-btn-svg" /> , name: "Reports" , goToPath: "/reports" },
                 ]
             } />
         </div>

@@ -6,6 +6,7 @@ import Header from '../Header/header.jsx';
 import SideBar from '../SideBar/sideBar.jsx';
 import Home from '../Home/home.jsx';
 import Analytics from '../Analytics/analytics.jsx';
+import Users from '../Users/users.jsx';
 import { useState } from 'react';
 import { analyzeUserJoinDate , analyzeSales , analizeTransactionsStatus} from '../../Utils/utils.js';
 
@@ -23,8 +24,9 @@ export default function App() {
               <Route path='/analytics' element={<Analytics userAnalyticsData={analyzeUserJoinDate(users)}  
                                                     salesAnalyticsData={analyzeSales(transactions)} 
                                                     transactionStatusAnalyticsData={analizeTransactionsStatus(transactions)} 
-                                                  />} 
-                                              />
+                                                />} 
+                  />
+                <Route path='/users' element={<Users  users={users} transactions={transactions} />} />
             </Routes>
           </div>
         </main>
