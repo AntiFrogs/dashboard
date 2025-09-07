@@ -41,3 +41,21 @@ export function analizeTransactionsStatus(transactions) {
     ];
 
 }
+
+export function validateEmail(email) {
+    return true;
+}
+
+export function validateUsername(username) {
+    return true;
+}
+
+export function vaildateProfession(profession) {
+    return true;
+}
+export function validateBirthDate(birthDate) {
+    return true;
+}
+export function validatePassword(passsword) {
+    return true;
+}
