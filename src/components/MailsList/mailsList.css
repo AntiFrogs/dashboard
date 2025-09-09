@@ -1,0 +1,56 @@
+.mails-list-container {
+    padding: 1rem 0.5rem;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.mails-list-header {
+    border-bottom: 1px solid #7A7A73;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.check-all-btn > input {
+    accent-color: #3396D3;
+}
+
+.mails-btns {
+    padding-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.mails-btn {
+    padding: 0.5rem 0.75rem;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.mails-btn:hover {
+    background-color: rgba(33, 97, 193, 0.2);
+}
+
+.mails-btn:active {
+    background-color: rgba(33, 97, 193, 1);
+    color: #fff;
+}
