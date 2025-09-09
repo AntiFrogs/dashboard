@@ -8,7 +8,7 @@ export default function SidebarCat({cat , buttons}) {
             <div className="sidebar-cat">
                 <p>{cat}</p>
                 <nav className="sidebar-submenu">
-                    {buttons.map(btn => <button  onClick={() => navigate(btn.goToPath)}
+                    {buttons.map(btn => <button  onClick={() => navigate(btn.goToPath , {replace: true})}
                                             key={btn.id}
                                             className="sidebar-submenu-btn">
                                             {btn.svg}

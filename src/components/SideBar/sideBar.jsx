@@ -42,13 +42,7 @@ export default function SideBar() {
                     { id:3 , svg: <TiMessages className="sidebar-submenu-btn-svg" /> , name: "Messages" , goToPath: "/messages"},
                 ]
             } />
-            <SidebarCat cat="Staff" buttons={
-                [
-                    { id:1 , svg: <FaBriefcase className="sidebar-submenu-btn-svg" /> , name: "Manage" , goToPath: "/manage" },
-                    { id:2 , svg: <IoAnalyticsOutline className="sidebar-submenu-btn-svg" /> , name: "Analytics" , goToPath: "/analytics" },
-                    { id:3 , svg: <MdError className="sidebar-submenu-btn-svg" /> , name: "Reports" , goToPath: "/reports" },
-                ]
-            } />
+
         </div>
     );
 }
