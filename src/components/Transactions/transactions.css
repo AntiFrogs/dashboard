@@ -1,0 +1,24 @@
+.transactions-list-container {
+    width: 90%;
+    padding: 1.5rem 1rem;
+    margin: 2rem auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.transactions-list-container > p:first-child {
+    font-size: 1.75rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    border-bottom: 2px solid #000;
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.transactions-list-container > .transactions-table th {
+    font-size: 1.15rem;
+}

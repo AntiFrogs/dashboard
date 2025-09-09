@@ -41,3 +41,29 @@ export function analizeTransactionsStatus(transactions) {
     ];
 
 }
+
+export function validateEmail(email) {
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+    return regex.test(email);
+}
+
+export function validateUsername(username) {
+    const regex = /^[a-zA-Z]/
+    return regex.test(username);
+}
+
+export function vaildateProfession(profession) {
+    return true;
+}
+export function validateBirthDate(birthDate) {
+    const regex = /^\d{4}\/\d{1,2}\/\d{1,2}$/;
+    if(regex.test(birthDate)) {
+        let [year , month , day] = birthDate.split("/");
+        if(+year <= (new Date()).getFullYear() && +month <= 12 && day <= 30) return true;
+     }
+     return false;
+}
+export function validatePassword(passsword) {
+    if(passsword.length < 8) return false;  
+    return true;
+}
