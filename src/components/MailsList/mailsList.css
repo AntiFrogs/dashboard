@@ -212,6 +212,10 @@
     color: #fff;
 }
 
+#attach-file-input {
+    display: none;
+}
+
 .btn-deactive {
     background-color: #7A7A73;
     pointer-events: none;

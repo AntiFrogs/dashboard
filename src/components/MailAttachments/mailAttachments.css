@@ -1,0 +1,9 @@
+.new-mail-attachments-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem 2rem;
+}

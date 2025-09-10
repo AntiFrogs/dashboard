@@ -11,12 +11,17 @@ import SignUp from '../SignUp/signUp.jsx';
 import Transactions from '../Transactions/transactions.jsx';
 import Mails from '../Mails/mails.jsx';
 import { useState } from 'react';
+import initmails from "../../data/mails.js";
 import { analyzeUserJoinDate , analyzeSales , analizeTransactionsStatus} from '../../Utils/utils.js';
 
 export default function App() {
   const [users , setUsers ] = useState(initUsers);
   const [transactions , setTransactions] = useState(initTransactions);
+  const [mails , setMails] = useState(initmails);
+  const [lastMailId , setLastMailId] = useState(mails[mails.length - 1].id);
   const [loggedInUser , setLoggedInUser] = useState(initUsers[0]);
+  const [lastUserId , setLastUserId] = useState(users[users.length - 1].id);
+
   return (
     <div className='container'>
         <Header />
@@ -31,9 +36,9 @@ export default function App() {
                                                 />} 
                   />
                 <Route path='/users' element={<Users  users={users} transactions={transactions} />} />
-                <Route path='/new_user' element={<SignUp  users={users} />} />
+                <Route path='/new_user' element={<SignUp  users={users} setUsers={setUsers} lastUserId={lastUserId} setLastUserId={setLastUserId} />} />
                 <Route path='/transactions' element={<Transactions  transactions={transactions} />} />
-                <Route path='/mail' element={<Mails loggedInUser={loggedInUser} />} />
+                <Route path='/mail' element={<Mails mails={mails} setMails={setMails} lastMailId={lastMailId} setLastMailId={setLastMailId} loggedInUser={loggedInUser} />} />
             </Routes>
           </div>
         </main>

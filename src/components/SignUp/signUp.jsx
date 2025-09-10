@@ -3,7 +3,7 @@ import "./signUp.css"
 import { FaCheck } from "react-icons/fa6";
 import { validateEmail, validateBirthDate , validatePassword , validateUsername , vaildateProfession } from "../../Utils/utils";
 
-export default function SignUp() {
+export default function SignUp({users , setUsers , lastUserId , setLastUserId}) {
     const [errorMesseage , setErrorMessage ] = useState("");
     const [signUpStep , setSignUpStep] = useState(1);
     const [formData , setFormData] = useState(new Map([["email" , ""] , ["username" , ""] , ["profession" , ""] , ["birthDate" , ""] , ["sex" , ""] , ["password" , ""] , ["re-password" , ""] ]));
@@ -67,7 +67,24 @@ export default function SignUp() {
         else if(signUpStep === 3) {
             if(formData.get("password") === formData.get("re-password")) {
                 if(validatePassword(formData.get("password"))) {
-                    setSignUpStep(n => n + 1);
+                    const today = new Date();
+                    const mm = String(today.getMonth() + 1).padStart(2, "0");
+                    const dd = String(today.getDate()).padStart(2, "0");
+                    const yyyy = String(today.getFullYear());
+                    console.log(lastUserId);
+                    let newUser = {
+                        id: lastUserId + 1,
+                        imagePath: "images/ayanami.jpg" , 
+                        username: formData.get("username") , 
+                        email: formData.get("email"),
+                        birthDate: formData.get("birthDate"),
+                        profession: formData.get("profession"),
+                        sex: formData.get("sex"),
+                        joiningDate: `${yyyy}/${mm}/${dd}`,
+                    }
+                    setUsers([newUser , ...users]);
+                    setSignUpStep(n => n + 1);  
+                    setLastUserId(n => n + 1);
                     setErrorMessage("");
                 }
                 else {

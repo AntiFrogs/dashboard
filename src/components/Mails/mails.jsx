@@ -5,12 +5,10 @@ import { FaInbox } from "react-icons/fa";
 import { FaArchive } from "react-icons/fa";
 import { FaTrash } from "react-icons/fa";
 
-import initmails from "../../data/mails.js";
 import { useState } from "react";
 
 
-export default function Mails({loggedInUser}) {
-    const [mails , setMails] = useState(initmails);
+export default function Mails({ mails , setMails , lastMailId , setLastMailId , loggedInUser}) {
     const [ isActive , setIsActive] = useState([false , true , false , false]);
 
     function mailCatClickHandler(index) {
@@ -48,6 +46,8 @@ export default function Mails({loggedInUser}) {
                 mails={mails} 
                 isActive={isActive}
                 loggedInUser={loggedInUser}
+                lastMailId={lastMailId}
+                setLastMailId={setLastMailId}
                 setMails={setMails} />
 
             </div>
