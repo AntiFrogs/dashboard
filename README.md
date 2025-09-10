@@ -1,12 +1,28 @@
-# React + Vite
+# My simple Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Admin dashboard with internal mail system.
 
-Currently, two official plugins are available:
+Check the Live Demo depolyed on [Vercel](https://my-first-admin-dashboard.vercel.app/)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How It's Made:
+**Tech Used:** React , CSS , Recharts , React-icons , React-router-dom
+<br />
+<br />
+With the help of react router package , this is a SPA admin dashboard using charts from Recharts package to showcase the analytics of the data available. The react application is a simple one and avoids complexity. 
 
-## Expanding the ESLint configuration
+## What's left:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The state management should be implemented with Redux for more readability. Also the data used to showcase the page is all temp and fake data found on the data src/data dir , so It would be convenient to possibally have a simple backend and database and a REST API. Tailwind could also help the readability of the source code but it's not a priority right now.       
+
+
+## How to run:
+This is based on vite so for development:
+```
+npm run dev
+```
+and for production: 
+```
+npm run build
+npm run preview
+```
+
