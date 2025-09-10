@@ -7,10 +7,11 @@ import { IoSend } from "react-icons/io5";
 import { ImAttachment } from "react-icons/im";
 import { MdOutlineEdit } from "react-icons/md";
 import MailListItem from "../MailListItem/mailListItem.jsx";
+import MailAttachments from "../MailAttachments/mailAttachments.jsx";
 import { useState } from "react";
 
-export default function MailsList({mails , setMails , isActive , loggedInUser}) {
-    const [newMailData , setNewMailData] = useState(new Map([["to" , ""] , ["title" , ""] , ["text" , ""] , ["tags" , [] ]]));
+export default function MailsList({mails , setMails , isActive , loggedInUser , lastMailId , setLastMailId }) {
+    const [newMailData , setNewMailData] = useState(new Map([["to" , ""] , ["title" , ""] , ["text" , ""] , ["tags" , [] ] ,  ["attachments" , [] ] ]));
     const [ newMailOpenIsOpen , setNewMailOpenIsOpen] = useState(false);
 
     function checkAllHandler(event) {
@@ -49,20 +50,22 @@ export default function MailsList({mails , setMails , isActive , loggedInUser}) 
         const yyyy = String(today.getFullYear());
 
         let newMail = {
-            id: mails[mails.length - 1].id + 1,
+            id: lastMailId  + 1,
             sender: loggedInUser.username,
             to: newMailData.get("to"),
             title: newMailData.get("title"),
             text: newMailData.get("text"),
             tags: newMailData.get("tags"),
+            attachments: newMailData.get("attachments"),
             date: `${mm}/${dd}/${yyyy}`,
             isStared: false,
-            hasAttachment: false,
+            hasAttachment: newMailData.get("attachments").length > 0,
             isArchived: false,
             isDeleted: false,
         };
-        setNewMailData(new Map([["to" , ""] , ["title" , ""] , ["text" , ""] , ["tags" , [] ]]));
+        setNewMailData(new Map([["to" , ""] , ["title" , ""] , ["text" , ""] , ["tags" , [] ] , ["attachments" , [] ] ]));
         setNewMailOpenIsOpen(false);
+        setLastMailId(n => n + 1);
         setMails([newMail , ...mails ]);
     }
 
@@ -84,6 +87,17 @@ export default function MailsList({mails , setMails , isActive , loggedInUser}) 
         });
         document.getElementById("check-all-checkbox").checked = false; 
         setMails(newMails);
+    }
+
+    function addAttachmentsHandler() {
+        let fileInput = document.getElementById("attach-file-input");
+        fileInput.click();
+    }
+
+    function addFile(event) {
+        let changedNewMailData = new Map(newMailData);
+        changedNewMailData.set("attachments" , [...newMailData.get("attachments") , event.target.files[0] ]);
+        setNewMailData(changedNewMailData);
     }
 
     return (
@@ -136,13 +150,17 @@ export default function MailsList({mails , setMails , isActive , loggedInUser}) 
                                 newMailData.get("tags").map((tag , index) => <div key={tag + "-" + index} className="mail-tag"><span>{tag}</span></div>)
                             }
                         </div>
+                        
+                        <MailAttachments attachments={newMailData.get("attachments")} />
+
                         <div className="new-mail-btns">
                             <button onClick={sendNewMailHandler}
                             className={"send-btn " + (newMailData.get("to") && newMailData.get("title") && newMailData.get("text") ? "" : "btn-deactive")} >
                                 <span>Send</span>
                                 <IoSend />
                             </button>
-                            <button className="attachment-btn">
+                            <button className="attachment-btn" onClick={addAttachmentsHandler}>
+                                <input type="file" id="attach-file-input" onInput={addFile} />
                                 <ImAttachment />
                             </button>
                             <div className="add-tags-container">

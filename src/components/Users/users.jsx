@@ -28,7 +28,23 @@ export default function Users({users , transactions}) {
                     <div className="selected-user-info">
                         <p>{selectedUser.username}</p>
                         <p>{selectedUser.profession}</p>
-                        <p> <span>Joined since</span> <span>{selectedUser.joiningDate}</span> </p>
+                        
+                        <div className="selected-user-info-box">
+                            <span>Email</span>
+                            <span>{selectedUser.email}</span>
+                        </div> 
+                        <div className="selected-user-info-box">
+                            <span>Joined since</span>
+                            <span>{selectedUser.joiningDate}</span>
+                        </div> 
+                        <div className="selected-user-info-box">
+                            <span>Sex</span>
+                            <span>{selectedUser.sex}</span>
+                        </div> 
+                        <div className="selected-user-info-box">
+                            <span>Birth date</span>
+                            <span>{selectedUser.birthDate}</span>
+                        </div> 
                     </div>
                     <div className="selected-user-transactions-list">
                         <p>Transactions</p>

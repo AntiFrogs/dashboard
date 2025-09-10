@@ -77,10 +77,14 @@
     margin-bottom: 1rem;
 }
 
-.selected-user-info > p:nth-child(3) {
-    width: 100%;
+.selected-user-info-box {
+    font-size: 0.9rem;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    color: #44444E;
 }
 
 .selected-user-transactions-list {

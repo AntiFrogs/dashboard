@@ -3,9 +3,10 @@ import { FaStar } from "react-icons/fa";
 import { ImAttachment } from "react-icons/im";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useState } from "react";
+import MailAttachments from "../MailAttachments/mailAttachments.jsx";
 
 
-export default function MailListItem({id , sender , to , isStared , hasAttachment , title , text , tags , date , loggedInUser}) {
+export default function MailListItem({id , sender , to , isStared , hasAttachment , title , text , tags , attachments , date , loggedInUser}) {
     const [isOpen , setIsOpen] = useState(false);
 
 
@@ -48,9 +49,7 @@ export default function MailListItem({id , sender , to , isStared , hasAttachmen
                     {tags.map( (tag , index) => <div key={tag + "-" + index} className="mail-tag"><span>{tag}</span></div>)}
                 </div>
                 {isOpen && hasAttachment &&
-                    <div className="mail-attachments">
-                        {/* to do in the future */}
-                    </div>
+                    <MailAttachments attachments={attachments} />
                 }
 
             </div>
