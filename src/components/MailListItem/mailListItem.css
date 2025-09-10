@@ -50,7 +50,14 @@
 
 .mail-sender > p {
     font-size: 1.25rem;
+}
 
+.mail-receiver {
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .mail-title > p {
@@ -77,11 +84,13 @@
     overflow: hidden;
     white-space: nowrap;
 }
-
 .open-mail-text {
     width: 100%;
     font-size: 0.9rem;
     color: #37353E;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    
 }
 
 
