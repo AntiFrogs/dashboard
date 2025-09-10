@@ -2,6 +2,7 @@ let mails = [
     {
         id: 1,
         sender: "Peyman Bigdeli",
+        to: "Mohammad Sadeghi",
         title: "Mails page is almost done",
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos voluptatibus nisi ut maiores eius minus.",
         tags: ["Biling" , "Report"],
@@ -14,6 +15,7 @@ let mails = [
     {
         id: 2,
         sender: "Mohammad Sadeghi",
+        to: "Peyman Bigdeli",
         title: "JOJO is the best anime ever",
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos voluptatibus nisi ut maiores eius minus.",
         tags: ["recommendation"],
@@ -26,6 +28,7 @@ let mails = [
     {
         id: 3,
         sender: "Nima norouzi",
+        to: "Peyman Bigdeli",
         title: "Police are after me!",
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos voluptatibus nisi ut maiores eius minus.",
         tags: ["Report"],
@@ -38,6 +41,7 @@ let mails = [
     {
         id: 4,
         sender: "Mahdi rezaee",
+        to: "Peyman Bigdeli",
         title: "Please go to shower",
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos voluptatibus nisi ut maiores eius minus.",
         tags: ["Report"],
@@ -50,6 +54,7 @@ let mails = [
     {
         id: 5,
         sender: "Ali Rezvani",
+        to: "Peyman Bigdeli",
         title: "YOU STINK !!!",
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos voluptatibus nisi ut maiores eius minus.",
         tags: ["Priority"],
@@ -61,7 +66,8 @@ let mails = [
     },
     {
         id: 6,
-        sender: "Pouyan Fard",
+        sender: "Peyman Bigdeli",
+        to: "Pouyan Fard",  
         title: "Nah I'd win ",
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos voluptatibus nisi ut maiores eius minus.",
         tags: [],
@@ -74,6 +80,7 @@ let mails = [
     {
         id: 7,
         sender: "Mohadeseh Jabbari",
+        to: "Peyman Bigdeli",
         title: "Stand Proud",
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos voluptatibus nisi ut maiores eius minus.",
         tags: ["Clients"],
@@ -86,6 +93,7 @@ let mails = [
     {
         id: 8,
         sender: "Fatemeh Aali",
+        to: "Peyman Bigdeli",
         title: "The one who has left it all behind",
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos voluptatibus nisi ut maiores eius minus.",
         tags: [],
@@ -96,8 +104,9 @@ let mails = [
         isDeleted: false,
     },
     {
-        id: 9,
+        id: 9,  
         sender: "Jone Doe",
+        to: "Peyman Bigdeli",
         title: "Potential man died to a grade 4 curse",
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos voluptatibus nisi ut maiores eius minus.",
         tags: ["Report"],
@@ -110,6 +119,7 @@ let mails = [
     {
         id: 10,
         sender: "Peyman Bigdeli",
+        to: "Jone Doe",
         title: "I'm staring this thig",
         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos voluptatibus nisi ut maiores eius minus.",
         tags: [],

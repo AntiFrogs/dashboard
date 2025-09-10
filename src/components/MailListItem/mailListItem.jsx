@@ -5,7 +5,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { useState } from "react";
 
 
-export default function MailListItem({id , sender , isStared , hasAttachment , title , text , tags , date}) {
+export default function MailListItem({id , sender , to , isStared , hasAttachment , title , text , tags , date , loggedInUser}) {
     const [isOpen , setIsOpen] = useState(false);
 
 
@@ -32,6 +32,12 @@ export default function MailListItem({id , sender , isStared , hasAttachment , t
                         }
                     </div>
                 </div>
+                {loggedInUser.username === sender &&
+                    <div className="mail-receiver">
+                            <span>To: </span>
+                            <span>{to}</span>
+                    </div>
+                }
                 <div className="mail-title">
                     <p><FaLongArrowAltRight color="#476EAE" size="1.5rem" /> <span>{title}</span></p>
                 </div>
@@ -39,7 +45,7 @@ export default function MailListItem({id , sender , isStared , hasAttachment , t
                     <p>{text}</p>
                 </div>
                 <div className="mail-tags">
-                    {tags.map(tag => <div className="mail-tag"><span>{tag}</span></div>)}
+                    {tags.map( (tag , index) => <div key={tag + "-" + index} className="mail-tag"><span>{tag}</span></div>)}
                 </div>
                 {isOpen && hasAttachment &&
                     <div className="mail-attachments">

@@ -9,7 +9,7 @@ import initmails from "../../data/mails.js";
 import { useState } from "react";
 
 
-export default function Mails() {
+export default function Mails({loggedInUser}) {
     const [mails , setMails] = useState(initmails);
     const [ isActive , setIsActive] = useState([false , true , false , false]);
 
@@ -45,8 +45,9 @@ export default function Mails() {
             </div>
             <div className="mails-content-container">
                 <MailsList 
-                mails={ mails} 
+                mails={mails} 
                 isActive={isActive}
+                loggedInUser={loggedInUser}
                 setMails={setMails} />
 
             </div>
