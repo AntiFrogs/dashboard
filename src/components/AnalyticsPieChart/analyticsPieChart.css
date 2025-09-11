@@ -33,3 +33,14 @@
         width: 60%;
     }
 }
+
+@media screen and (max-width: 480px ) {
+    .analytics-pie-chart-box {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 410px ) {
+    .analytics-pie-chart-box {
+        width: 90%;
+    }
+}

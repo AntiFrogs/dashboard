@@ -27,7 +27,7 @@ export default function Home({users , transactions , userAnalyticsData}) {
                     <p>Latest Transactions</p>
                     <table className="transactions-table" >
                         <thead>
-                            <tr>
+                            <tr className="transactions-table-head-row">
                                 <th>Customer</th>
                                 <th>Date</th>
                                 <th>Amount</th>

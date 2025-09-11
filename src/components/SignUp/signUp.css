@@ -2,6 +2,7 @@
     width: 95%;
     height: 100%;   
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
@@ -282,5 +283,97 @@
 @media screen and (max-width: 850px ) {
     .sign-up-box {
         width: 80%;
+    }
+}
+@media screen and (max-width: 750px ) {
+    .quarter-width-input-container {
+        width: 40%;
+    }
+
+}
+@media screen and (max-width: 600px ) {
+    .step-number::after {
+        font-size: 0.8rem;
+    }
+
+    .sign-up-inputs {
+        width: 100%;
+    }
+
+    .full-width-input-container {
+        padding: 0.25rem 0.5rem;
+    }
+
+    .input-row-container {
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 550px ) {
+    .half-width-input-container  {
+        width: 75%;
+    }
+
+    .quarter-width-input-container {
+        width: 50%;
+    }
+    .input-row-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .sex-input-container > p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px ) {
+    .step-number::after {
+        display: none;
+    }
+
+    .sign-up-header > h3  {
+        font-size: 2rem;
+    }
+
+    .sign-up-header > span  {
+        font-size: 0.9rem;
+    }
+
+    #result-text {
+        font-size: 1.35rem;
+    }
+}
+
+@media screen and (max-width: 450px ) {
+    .half-width-input-container  {
+        width: 85%;
+    }
+
+    .quarter-width-input-container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 400px ) {
+    .half-width-input-container  {
+        width: 90%;
+    }
+
+    .quarter-width-input-container {
+        width: 70%;
+    }
+
+    .sign-up-header > h3  {
+        font-size: 1.75rem;
+    }
+
+    .sign-up-header > span  {
+        font-size: 0.85em;
+    }
+
+        #result-text {
+        font-size: 1.25rem;
     }
 }

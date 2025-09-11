@@ -85,3 +85,50 @@
         width: 90%;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .activity-list:first-of-type {
+        width: 90%;
+    }
+
+    .activity-list:last-of-type {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .activity-list:first-of-type {
+        width: 100%;
+    }
+
+    .transactions-table-head-row > th:nth-child(2) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .transactions-table-head-row > th:nth-child(3) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+    .activity-list .user-image-container {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .activity-list .user-info-container {
+        font-size: 0.9rem;
+    }
+    .activity-list .user-info-container > p:last-child {
+        font-size: 0.8rem;
+    }
+    .activity-list .user-display-btn {
+        font-size: 0.8rem;
+        gap: 0.25rem;
+        padding: 0.35rem 0.25rem;
+    }
+
+}

@@ -15,10 +15,10 @@ import { FaBriefcase } from "react-icons/fa";
 import { MdError } from "react-icons/md";
 
 
-export default function SideBar() {
+export default function SideBar({showSideBar}) {
     
     return (
-        <div className="sidebar">
+        <div style={showSideBar ? {left: "1rem"} : {}} className="sidebar">
             <SidebarCat cat="Dashboard" buttons={
                 [
                     {id:1 , svg: <LuBrickWall className="sidebar-submenu-btn-svg" /> , name: "Home" , goToPath: "/"},
