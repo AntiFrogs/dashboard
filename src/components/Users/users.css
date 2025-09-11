@@ -1,5 +1,5 @@
 .users-info-container {
-    width: 100%;
+    width: 95%;
     display: flex;
     margin: 2rem 1rem;
     justify-content: center;
@@ -9,7 +9,7 @@
 }
 
 .users-list-container , .selected-user-info-container   {
-    width: 45%;
+    width: 50%;
     padding: 1rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
     border-radius: 10px;
@@ -69,12 +69,14 @@
 
 .selected-user-info > p:nth-child(1) {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .selected-user-info > p:nth-child(2) {
     font-size: 1.1rem;
     color: #7A7A73;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .selected-user-info-box {
@@ -108,4 +110,86 @@
 
 .selected-user-transaction-table td {
     padding-top: 1rem ;
+}
+
+
+@media screen and (max-width: 1100px ) {
+
+    .users-list-container , .selected-user-info-container  {
+        padding: 1rem 1rem;
+    }
+
+    .selected-user-info > p:nth-child(1) {
+        font-size: 1.25rem;
+    }
+
+    .selected-user-info > p:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .users-info-container {
+        gap: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 950px ) {
+
+    .users-list-container , .selected-user-info-container  {
+        padding: 1rem 0.75rem;
+    }
+
+    .selected-user-image-container {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .users-list-container {
+        width: 55%;
+    }
+    .selected-user-info-container  {
+        width: 40%;
+    }
+
+    .selected-user-info-box:first-of-type {
+        justify-content: center;
+    }
+
+    .selected-user-info-box:first-of-type > span:first-child {
+        display: none;
+    }
+
+    .selected-user-transaction-table td {
+        font-size: 0.8rem;
+    }
+
+    .selected-user-transaction-table th {
+        font-size: 0.9rem;
+    }
+
+    .selected-user-transactions-list {
+        padding:  1rem 0;
+    }
+
+}
+
+@media screen and (max-width: 850px ) {
+    .users-list-container {
+        width: 60%;
+    }
+    .selected-user-info-container  {
+        width: 35%;
+    }
+
+    .selected-user-info-box {
+        font-size: 0.8rem;
+    }
+
+    .selected-user-transaction-table th {
+        font-size: 0.8rem;
+    }
+
+    .selected-user-transaction-table td {
+        font-size: 0.7rem;
+    }
+
 }

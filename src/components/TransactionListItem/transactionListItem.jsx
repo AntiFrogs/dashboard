@@ -12,7 +12,7 @@ export default function TransactionListItem({user , date , amount , status , sho
                     <p>{user.username}</p>
                 </td>
             }
-            <td className="transaction-date">{date}</td>
+            <td className="transaction-date">{showUserInfo ? date : date.slice(2)}</td>
             <td className="transaction-amount">${amount.toFixed(2)}</td>
             <td className={"transaction-status " + (status !== "Approved" ? status !== "Pending" ? status !== "Declined" ? "" : "declined" : "pending" : "approved")}>
                 <span>{status}</span>

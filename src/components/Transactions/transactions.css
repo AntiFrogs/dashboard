@@ -22,3 +22,9 @@
 .transactions-list-container > .transactions-table th {
     font-size: 1.15rem;
 }
+
+@media screen and (max-width: 850px ) {
+    .transactions-list-container {
+        width: 95%;
+    }
+}

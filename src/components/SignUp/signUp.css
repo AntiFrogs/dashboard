@@ -266,3 +266,21 @@
     color: #08CB00;
     text-align: center;
 }
+
+
+@media screen and (max-width: 1000px ) {
+    .sign-up-box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 900px ) {
+    .sign-up-box {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 850px ) {
+    .sign-up-box {
+        width: 80%;
+    }
+}
