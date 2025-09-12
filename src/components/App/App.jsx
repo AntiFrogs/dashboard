@@ -21,12 +21,13 @@ export default function App() {
   const [lastMailId , setLastMailId] = useState(mails[mails.length - 1].id);
   const [loggedInUser , setLoggedInUser] = useState(initUsers[0]);
   const [lastUserId , setLastUserId] = useState(users[users.length - 1].id);
+  const [showSideBar , setShowSideBar] = useState(false);
 
   return (
     <div className='container'>
-        <Header />
+        <Header showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
         <main className='main'>
-          <SideBar />
+          <SideBar showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
           <div className="main-content">
             <Routes>
               <Route path='/' element={<Home users={users} transactions={transactions} userAnalyticsData={analyzeUserJoinDate(users)} />} />

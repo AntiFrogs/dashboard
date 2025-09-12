@@ -51,3 +51,18 @@
     -ms-transition: all 150ms ease-in;
     -o-transition: all 150ms ease-in;
 }
+
+@media screen and (max-width: 450px) {
+    .new-mail-attachment-info > p {
+        font-size: 0.8rem;
+    }
+
+    .new-mail-attachment-info > span {
+        font-size: 0.7rem;
+        color: #7A7A73;
+    }
+
+    .new-mail-attachment-icon {
+        font-size: 1.65rem;
+    }
+}

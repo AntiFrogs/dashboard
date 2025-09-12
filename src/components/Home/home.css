@@ -60,3 +60,44 @@
 .activity-list:last-of-type {
     width: 60%;
 }
+
+
+@media screen and (max-width: 1150px) {
+    .activities {
+        flex-direction: column;
+        align-items: center;
+    }
+    .activity-list:first-of-type {
+        width: 55%;
+    }
+
+    .activity-list:last-of-type {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .activity-list:first-of-type {
+        width: 65%;
+    }
+
+    .activity-list:last-of-type {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .activity-list:first-of-type {
+        width: 90%;
+    }
+
+    .activity-list:last-of-type {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .activity-list:first-of-type {
+        width: 100%;
+    }
+}
