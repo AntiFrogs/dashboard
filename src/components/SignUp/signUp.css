@@ -344,6 +344,11 @@
     #result-text {
         font-size: 1.35rem;
     }
+
+    .empty-space {
+        width: 30%;
+    }
+
 }
 
 @media screen and (max-width: 450px ) {
