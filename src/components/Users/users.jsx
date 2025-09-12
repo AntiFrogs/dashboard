@@ -2,6 +2,7 @@ import "./users.css"
 import UserListItem from "../UserListItem/userListItem.jsx";
 import TransactionListItem from "../TransactionListItem/transactionListItem.jsx";
 import { useEffect, useState } from "react";
+import { MdFullscreenExit } from "react-icons/md";
 
 export default function Users({users , transactions}) {
     const [selectedUser , setSelectedUser] = useState(false);
@@ -22,6 +23,9 @@ export default function Users({users , transactions}) {
             </div>
             {selectedUser && 
                 <div className="selected-user-info-container">
+                    <div className="close-selected-user-info-modal" onClick={() => setUserIdToShow(false)} >
+                        <MdFullscreenExit className="close-selected-user-info-modal-icon" />
+                    </div>
                     <div className="selected-user-image-container">
                         <img src={selectedUser.imagePath} alt="" />
                     </div>

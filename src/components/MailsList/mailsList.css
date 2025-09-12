@@ -157,6 +157,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .send-btn {
@@ -253,6 +254,7 @@
 }
 
 .add-tags-container > button {
+    font-size: 0.85rem;
     background-color: transparent;
     border: none;
     padding: 0.25rem 0.5rem;
@@ -304,3 +306,59 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .mails-btns {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mails-btns {
+        gap: 0.75rem;
+    }
+
+    .new-mail-btns {
+        gap: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+    .send-btn {
+        font-size: 1rem;
+    }
+
+    .add-tags-container {
+        margin-left: 0;
+    }
+
+    .add-tags-container > input {
+        width: 5rem;
+        font-size: 0.8rem;
+    }
+
+    .add-tags-container > button {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .mails-btns {
+        gap: 0.5rem;
+    }
+
+    .mails-btn {
+        font-size: 0.8rem;
+    }
+
+    .mails-list-header {
+        padding: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .mails-btn > span {
+        display: none;
+    }
+}
+

@@ -40,7 +40,7 @@ export default function MailListItem({id , sender , to , isStared , hasAttachmen
                     </div>
                 }
                 <div className="mail-title">
-                    <p><FaLongArrowAltRight color="#476EAE" size="1.5rem" /> <span>{title}</span></p>
+                    <p><FaLongArrowAltRight className="mail-title-icon" /> <span>{title}</span></p>
                 </div>
                 <div  className={isOpen ? "open-mail-text" : "close-mail-text"}  >
                     <p>{text}</p>

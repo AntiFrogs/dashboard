@@ -37,20 +37,3 @@
     color: #DC143C;
 }
 
-@media screen and (max-width: 600px) {
-    .transaction-date {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .transaction-amount {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 410px) {
-    .transaction-cutomer-info > p {
-        font-size: 0.9rem;
-    }
-}

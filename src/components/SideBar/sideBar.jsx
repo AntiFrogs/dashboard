@@ -15,18 +15,18 @@ import { FaBriefcase } from "react-icons/fa";
 import { MdError } from "react-icons/md";
 
 
-export default function SideBar({showSideBar}) {
+export default function SideBar({showSideBar , setShowSideBar}) {
     
     return (
         <div style={showSideBar ? {left: "1rem"} : {}} className="sidebar">
-            <SidebarCat cat="Dashboard" buttons={
+            <SidebarCat setShowSideBar={setShowSideBar} cat="Dashboard" buttons={
                 [
                     {id:1 , svg: <LuBrickWall className="sidebar-submenu-btn-svg" /> , name: "Home" , goToPath: "/"},
                     {id:2 , svg: <IoAnalyticsOutline className="sidebar-submenu-btn-svg" /> , name: "Analytics" , goToPath: "/analytics"},
                     {id:3 , svg: <FaMoneyCheckAlt className="sidebar-submenu-btn-svg" /> , name: "Sales" , goToPath: "sales"},
                 ]
             } />
-            <SidebarCat cat="Quick menu" buttons={
+            <SidebarCat setShowSideBar={setShowSideBar} cat="Quick menu" buttons={
                 [
                     {id:1 , svg: <FaUsers className="sidebar-submenu-btn-svg" /> , name: "Users" , goToPath: "/users"},
                     {id:2 , svg: <FaRegUser className="sidebar-submenu-btn-svg" /> , name: "New User" , goToPath: "/new_user"},
@@ -35,7 +35,7 @@ export default function SideBar({showSideBar}) {
                     {id:5 , svg: <FaChartSimple className="sidebar-submenu-btn-svg" /> , name: "Reports" , goToPath: "/reports"},
                 ]
             } />
-            <SidebarCat cat="Notifications" buttons={
+            <SidebarCat setShowSideBar={setShowSideBar} cat="Notifications" buttons={
                 [
                     { id:1 , svg: <IoMdMail className="sidebar-submenu-btn-svg" /> , name: "Mail" , goToPath: "/mail"},
                     { id:2 , svg: <MdOutlineDynamicFeed className="sidebar-submenu-btn-svg" /> , name: "Feedback" , goToPath: "/feedback"},

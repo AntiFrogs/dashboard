@@ -53,6 +53,7 @@
 }
 
 .mail-receiver {
+    font-size: 1rem;
     margin-left: 0.5rem;
     display: flex;
     justify-content: flex-start;
@@ -61,9 +62,15 @@
 }
 
 .mail-title > p {
+    font-size: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.mail-title-icon {
+    color: #476EAE;
+    font-size: 1.5rem;
 }
 
 .mail-info-icons {
@@ -120,4 +127,94 @@
 .mail-date {
     font-size: 0.9rem;
     color: #7A7A73; 
+}
+
+
+@media screen  and (max-width: 650px) {
+    
+    .mail-sender > p {
+        font-size: 1.1rem;
+    }
+    
+    .mail-receiver , .mail-title > p {
+        font-size: 0.9rem;
+    }
+    
+    .mail-title-icon {
+        font-size: 1.25rem;
+    }
+    
+    .close-mail-text , .open-mail-text {
+        font-size: 0.8rem;
+    }
+    
+    .close-mail-text {
+        width: 80%;
+    }
+    
+    .mail-tags {
+        gap: 0.75rem;   
+    }
+    
+    .mail-tag {
+        font-size: 0.8rem;
+    }
+
+    .mail-date {
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media screen  and (max-width: 550px) {
+    .mail-list-item {
+        padding: 1rem 0.5rem;
+    }
+
+    .mail-date {
+        font-size: 0.7rem;
+    }
+
+    .close-mail-text {
+        width: 90%;
+    }
+}
+
+@media screen  and (max-width: 500px) {
+    .close-mail-text {
+        width: 90%;
+    }
+    .mail-date {
+        display: none;
+    }
+}
+
+@media screen  and (max-width: 500px) {
+    .mail-sender > p {
+        font-size: 1rem;
+    }
+    
+    .mail-receiver , .mail-title > p {
+        font-size: 0.85rem;
+    }
+    
+    .mail-title-icon {
+        font-size: 1.1rem;
+    }
+    
+    .close-mail-text , .open-mail-text {
+        font-size: 0.8rem;
+    }
+
+    .close-mail-text {
+        width: 100%;
+    }
+    
+    .mail-tags {
+        gap: 0.5rem;   
+    }
+    
+    .mail-tag {
+        font-size: 0.75rem;
+    }   
 }

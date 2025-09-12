@@ -27,7 +27,7 @@ export default function App() {
     <div className='container'>
         <Header showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
         <main className='main'>
-          <SideBar showSideBar={showSideBar} />
+          <SideBar showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
           <div className="main-content">
             <Routes>
               <Route path='/' element={<Home users={users} transactions={transactions} userAnalyticsData={analyzeUserJoinDate(users)} />} />

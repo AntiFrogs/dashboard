@@ -28,3 +28,27 @@
         width: 95%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .transactions-table .transaction-date {
+        display: none;
+    }
+    .transactions-table th:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .transactions-table .transaction-amount {
+        display: none;
+    }
+    .transactions-table th:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .transactions-table .transaction-cutomer-info > p {
+        font-size: 0.9rem;
+    }
+}
